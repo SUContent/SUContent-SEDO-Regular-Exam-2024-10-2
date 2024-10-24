@@ -7,6 +7,7 @@ namespace Homies.Data.Data.Models
 {
     public class Event
     {
+        // Some comment
         [Key]
         [Required]
         public int Id { get; set; }
