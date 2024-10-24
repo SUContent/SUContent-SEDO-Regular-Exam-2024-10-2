@@ -14,7 +14,7 @@ using Moq;
 using NUnit.Framework;
 using Homies.Data.Data;
 using Type = Homies.Data.Data.Models.Type;
-
+// test comment
 namespace Homies.Tests.Controllers
 {
     public class EventControllerTests
