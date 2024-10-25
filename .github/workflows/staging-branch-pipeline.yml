@@ -25,5 +25,5 @@ jobs:
       run: dotnet build --no-restore
 
     - name: Run integration tests
-      run: dotnet test Homies.IntegrationTests/Homies.IntegrationTests.csproj --no-build --verbosity normal
+      run: dotnet test Homes.IntegrationTests/Homies.IntegrationTests.csproj --no-build --verbosity normal
   
