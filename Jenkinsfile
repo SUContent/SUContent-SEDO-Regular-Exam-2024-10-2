@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+when {
+    branch 'feature-ci-pipeline'
+}
     stages {
         stage('Build') {
             steps {
