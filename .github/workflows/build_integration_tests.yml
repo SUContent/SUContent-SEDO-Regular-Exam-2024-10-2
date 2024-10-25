@@ -20,5 +20,5 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Test
+    - name: Run integration tests
       run: dotnet test Homes.IntegrationTests/Homes.IntegrationTests.csproj --no-build --verbosity normal
