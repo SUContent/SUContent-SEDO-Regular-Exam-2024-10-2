@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+
+    environment {
+        TARGET_BRANCH = 'feature-ci-pipeline'
+    }
+
+    stages {
+        stage('Run on Target Branch') {
+            when {
+                branch TARGET_BRANCH
+            }
+
+            stages {   
+                stage('Restore dependencies') {
+                    steps {
+                        bat 'dotnet restore'
+                    }
+                }
+
+                stage('.Net Build') {
+                    steps {
+                        bat 'dotnet build --no-restore'
+                    }
+                }
+
+                stage('Run tests') {
+                    steps {
+                        bat 'dotnet test --no-build --verbosity normal'
+                    }
+                }
+            }
+        }
+    }
+}
