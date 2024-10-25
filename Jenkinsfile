@@ -7,18 +7,14 @@ pipeline {
     branch 'feature-ci-pipeline'
 }
             steps {
-                echo 'Building..'
+                bat 'dotnet build'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                bat 'dotnet test'
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+        
     }
 }
