@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Execute Unit Tests
-      run: dotnet test C:\Users\lasss\Desktop\ExamPrep\Homies.UnitTests 
+      run: dotnet test  Homes.UnitTests/Homes.UnitTests.csproj --no build --verbosity normal
