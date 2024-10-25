@@ -1,5 +1,9 @@
 pipeline {
     agent any 
+
+    when {
+        branch 'feature-ci-pipeline'
+    }
     stages {
         stage('Restore dependencies') { 
             steps {
