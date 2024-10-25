@@ -1,12 +1,11 @@
 pipeline {
     agent any
 
-    stages {
-when {
+    stages {        
+        stage('Build') {
+            when {
     branch 'feature-ci-pipeline'
 }
-        
-        stage('Build') {
             steps {
                 echo 'Building..'
             }
