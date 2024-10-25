@@ -21,4 +21,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Execute the unit tests
-      run: dotnet test SUContent-SEDO-Regular-Exam-2024-10-2/Homies.UnitTests/Homies.UnitTests.csproj --no-build --verbosity normal
+      run: dotnet test Homies.UnitTests/Homies.UnitTests.csproj --no-build --verbosity normal
