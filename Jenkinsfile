@@ -18,8 +18,6 @@ pipeline {
                         bat 'dotnet test Homies.UnitTests/Homies.UnitTests.csproj --no-build --verbosity normal'
                     } else if (env.BRANCH_NAME == 'staging') {
                         bat 'dotnet test Homes.IntegrationTests/Homes.IntegrationTests.csproj --no-build --verbosity normal'
-                    } else {
-                        echo "No tests to run for the '${env.BRANCH_NAME}' branch."
                     }
                 }
             }
