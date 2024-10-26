@@ -1,0 +1,15 @@
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/bin/Debug/net6.0/Homies.Data.deps.json
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/bin/Debug/net6.0/Homies.Data.runtimeconfig.json
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/bin/Debug/net6.0/Homies.Data.dll
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/bin/Debug/net6.0/Homies.Data.pdb
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/Homies.Data.csproj.AssemblyReference.cache
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/Homies.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/Homies.Data.AssemblyInfoInputs.cache
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/Homies.Data.AssemblyInfo.cs
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/Homies.Data.csproj.CoreCompileInputs.cache
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/Homies.Data.sourcelink.json
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/Homies.Data.dll
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/refint/Homies.Data.dll
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/Homies.Data.pdb
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/Homies.Data.genruntimeconfig.cache
+/Users/melisarudeva/SUContent-SEDO-Regular-Exam-2024-10-2/Homies.Data/obj/Debug/net6.0/ref/Homies.Data.dll
