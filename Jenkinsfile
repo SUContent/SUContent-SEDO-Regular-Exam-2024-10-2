@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Restore dependencies') { 
             when {
-                branch: "feature-ci-pipeline"
+                branch "feature-ci-pipeline"
             }
             steps {
                 sh 'dotnet restore'
@@ -13,7 +13,7 @@ pipeline {
       
         stage('Build the application') { 
             when {
-                branch: "feature-ci-pipeline"
+                branch "feature-ci-pipeline"
             }
             steps {
                 sh 'dotnet build --no-restore'
@@ -22,7 +22,7 @@ pipeline {
       
         stage('Test the application') { 
             when {
-                branch: "feature-ci-pipeline"
+                branch "feature-ci-pipeline"
             }
             steps {
                 sh 'dotnet test --no-build --verbosity normal'
