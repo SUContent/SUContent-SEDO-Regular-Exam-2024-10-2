@@ -55,3 +55,5 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 app.Run();
+
+//Test if unit test execution is working correct
