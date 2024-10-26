@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    triggers {
+        pollSCM('* * * * *')
+    }
     stages {
         stage('Run on feature-ci-pipeline branch') {
             when {
