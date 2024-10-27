@@ -1,6 +1,11 @@
 pipeline {
     agent any 
     stages {
+        stage('Checkout') {
+            steps {
+                checkout([$class: 'GitSCM', branches: [[name: '*/feature-ci-pipeline']], userRemoteConfigs: [[url: 'https://github.com/MMESTANOV/SUContent-SEDO-Regular-Exam-2024-10-2']]])
+            }
+        }
         stage('Restore dependencies') { 
             steps {
                 bat 'dotnet restore'
