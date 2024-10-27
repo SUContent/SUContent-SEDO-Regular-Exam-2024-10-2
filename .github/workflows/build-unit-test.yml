@@ -20,4 +20,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Run unit tests
-      run: dotnet test Homies.UnitTests\Homies.UnitTests.csproj --no-build --verbosity quiet
+      run: dotnet test Homies.UnitTests/Homies.UnitTests.csproj --no-build --verbosity quiet
