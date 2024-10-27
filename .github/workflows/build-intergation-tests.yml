@@ -20,4 +20,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Run integration tests
-      run: dotnet test Homes.IntegrationTests\Homes.IntegrationTests.csproj --no-build --verbosity quiet
+      run: dotnet test Homes.IntegrationTests/Homes.IntegrationTests.csproj --no-build --verbosity quiet
