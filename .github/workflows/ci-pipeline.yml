@@ -1,0 +1,52 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - develop
+      - staging
+
+jobs:
+  # Job to run unit tests on the develop branch
+  unit-tests:
+    if: github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Set up .NET 6.0
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build the application
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Run Unit Tests
+        run: dotnet test --no-build --configuration Release --filter Category=UnitTest
+
+  # Job to run integration tests on the staging branch
+  integration-tests:
+    if: github.ref == 'refs/heads/staging'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Set up .NET 6.0
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build the application
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Run Integration Tests
+        run: dotnet test --no-build --configuration Release --filter Category=IntegrationTest
