@@ -2,7 +2,7 @@ name: Build and run unit tests on .Net app
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "develop" ]
 
 jobs:
   build:
