@@ -1,4 +1,4 @@
-name: Build and unit test develop branch
+name: Build and run unit test for develop branch
 
 on:
   push:
