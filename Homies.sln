@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homes.IntegrationTests", "H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homies.UnitTests", "Homies.UnitTests\Homies.UnitTests.csproj", "{B5B9D016-FAF5-42F5-BAAA-B71DDA4C984E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{EBDE51EC-7AEC-4732-843C-3F585F6E2E35}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Jenkinsfile = Jenkinsfile
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
