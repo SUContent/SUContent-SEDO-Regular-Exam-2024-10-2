@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Restore Dependencies') {
             steps {
-                bat '~/.dotnet/dotnet restore'
+                bat 'dotnet restore'
             }
         }
 
         stage('Build') {
             steps {
-                bat '~/.dotnet/dotnet build --no-restore'
+                bat 'dotnet build --no-restore'
             }
         }
 
