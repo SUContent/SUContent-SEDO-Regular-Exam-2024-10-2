@@ -37,7 +37,7 @@ namespace Homies.Tests.Controllers
 
             _controller = new EventController(_context);
 
-            // Mocking user claims
+            // Mocking user claims Error
             _mockUser = new Mock<ClaimsPrincipal>();
             _mockUser.Setup(u => u.FindFirst(It.IsAny<string>())).Returns(new Claim(ClaimTypes.NameIdentifier, "test-user"));
             _controller.ControllerContext = new ControllerContext
