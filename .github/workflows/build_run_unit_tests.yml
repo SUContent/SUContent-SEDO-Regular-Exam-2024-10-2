@@ -7,7 +7,7 @@ on:
   push:
     branches: [ "develop" ]
 jobs:
-  build:
+  Build and run Unit Tests:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the repository
