@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
         stage('Build') {
             steps {
                 bat 'dotnet restore'
@@ -8,14 +13,17 @@ pipeline {
             }
         }
         stage('Test') {
-          steps{
-              bat 'dotnet test --filter "Category=Unit"' 
-          }
+            steps {
+                bat 'dotnet test --filter "Category=Unit"' 
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts '**/*.trx' 
         }
     }
     triggers {
-        githubPush {
-            branch('*/feature-ci-pipeline') 
-        }
+        githubPush branch: '*/feature-ci-pipeline'  
     }
 }
