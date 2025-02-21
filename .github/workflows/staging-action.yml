@@ -1,4 +1,4 @@
-name: Housing App Build and Test develop branch
+name: Housing App Build and Test staging branch for integrations test
 
 on:
   push:
@@ -21,4 +21,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test Homes.IntegrationTests/Homes.IntegrationTests.csproj --no-build --verbosity normal
