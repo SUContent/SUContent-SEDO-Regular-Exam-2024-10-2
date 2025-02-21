@@ -14,13 +14,13 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'dotnet test --filter "Category=Unit"' 
+                bat 'dotnet test --logger "trx;LogFileName=testresults.trx" --results-directory TestResults'
             }
         }
     }
     post {
         always {
-            archiveArtifacts '**/*.trx' 
+            archiveArtifacts 'TestResults/*.trx'
         }
     }
   
