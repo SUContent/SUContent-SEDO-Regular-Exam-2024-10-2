@@ -25,8 +25,6 @@ pipeline {
     }
   
     triggers { 
-        githubPush '*/feature-ci-pipeline' 
+        githubPush()
     }
-
-    
 }
