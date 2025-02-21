@@ -23,7 +23,10 @@ pipeline {
             archiveArtifacts '**/*.trx' 
         }
     }
-    triggers {
-        githubPush branch: '*/feature-ci-pipeline'  
+  
+    triggers { 
+        githubPush '*/feature-ci-pipeline' 
     }
+
+    
 }
