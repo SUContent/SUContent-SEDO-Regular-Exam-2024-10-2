@@ -1,8 +1,8 @@
-name: Housing App Build and Test develop branch
+name: Homes Build and Test develop branch on unit tests
 
 on:
   push:
-    branches: [ "develop", "staging" ]
+    branches: [ "develop" ]
 
 jobs:
   build:
@@ -21,4 +21,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test Homes.Homies.UnitTests/Homies.UnitTests.csproj --no-build --verbosity normal
