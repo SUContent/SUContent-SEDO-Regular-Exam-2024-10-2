@@ -19,6 +19,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet --no-restore
+      run: dotnet build --no-restore
     - name: Execute Unit Test
       run: dotnet test Homies.UnitTests/Homies.UnitTests.csproj --no-build --verbosity normal
