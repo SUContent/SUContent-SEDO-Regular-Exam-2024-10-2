@@ -1,11 +1,12 @@
 pipeline {
   agent any
 
-  stage("Restore dependencies"){
-    steps {
-      bat 'dotnet restore'
+  stages {
+    stage("Restore dependencies"){
+      steps {
+        bat 'dotnet restore'
+      }
     }
-  }
 
   stage("Build the project") {
     steps {
@@ -17,5 +18,6 @@ pipeline {
     steps {
       bat 'dotnet test'
     }
+  }
   }
 }
