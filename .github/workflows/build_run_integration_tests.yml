@@ -17,7 +17,7 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
-    - name: Build
+    - name: Build solution
       run: dotnet build --no-restore
     - name: Run unit tests
       run: dotnet test Homes.IntegrationTests/Homes.IntegrationTests.csproj  --no-build --verbosity normal
