@@ -1,7 +1,14 @@
 pipeline {
     agent any
 
-    stages {  // Missing 'stages' block added
+    stages {  
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+
         stage('Restore Dependencies') {
             steps {
                 sh 'dotnet restore'
