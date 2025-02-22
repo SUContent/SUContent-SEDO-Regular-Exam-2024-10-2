@@ -8,33 +8,33 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'feature-ci-pipeline', url: 'https://github.com/dimataa1/SUContent-SEDO-Regular-Exam-2025'
+                git url: 'https://github.com/dimataa1/SUContent-SEDO-Regular-Exam-2025', branch: 'feature-ci-pipeline'
             }
         }
 
         stage('Setup .NET') {
             steps {
                 script {
-                    sh 'dotnet --version' 
+                    bat 'dotnet --version'  
                 }
             }
         }
 
         stage('Restore Dependencies') {
             steps {
-                sh 'dotnet restore'
+                bat 'dotnet restore'
             }
         }
 
         stage('Build Application') {
             steps {
-                sh 'dotnet build --configuration Release --no-restore'
+                bat 'dotnet build --configuration Release --no-restore'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'dotnet test --no-build --verbosity normal'
+                bat 'dotnet test --no-build --verbosity normal'
             }
         }
     }
