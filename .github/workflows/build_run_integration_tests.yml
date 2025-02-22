@@ -2,7 +2,7 @@ name: Build the app and run the integration tests
 
 on:
   push:
-    branches: [ "develop" ]
+    branches: [ "staging" ]
 
 jobs:
   build:
