@@ -1,0 +1,15 @@
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\bin\Debug\net6.0\Homies.Data.deps.json
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\bin\Debug\net6.0\Homies.Data.runtimeconfig.json
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\bin\Debug\net6.0\Homies.Data.dll
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\bin\Debug\net6.0\Homies.Data.pdb
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\Homies.Data.csproj.AssemblyReference.cache
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\Homies.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\Homies.Data.AssemblyInfoInputs.cache
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\Homies.Data.AssemblyInfo.cs
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\Homies.Data.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\Homies.Data.sourcelink.json
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\Homies.Data.dll
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\refint\Homies.Data.dll
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\Homies.Data.pdb
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\Homies.Data.genruntimeconfig.cache
+C:\Users\Pc\Desktop\SUContent-SEDO-Regular-Exam-2024-10-2\Homies.Data\obj\Debug\net6.0\ref\Homies.Data.dll
