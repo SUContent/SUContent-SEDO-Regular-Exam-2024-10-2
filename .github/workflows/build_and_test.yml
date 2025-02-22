@@ -1,0 +1,24 @@
+name: Build and Test .NET application
+
+on:
+  push:
+    branches: [ "develop" ]
+
+jobs:
+  build_and_run_unit_tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 6
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Run Unit Tests
+      run: dotnet test Homies.UnitTests/Homies.UnitTests.csproj --no-build --verbosity normal
