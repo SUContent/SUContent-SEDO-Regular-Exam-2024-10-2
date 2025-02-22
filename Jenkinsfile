@@ -20,6 +20,7 @@ pipeline {
                     echo .NET 6.0 not found, installing...
                     curl -L https://dot.net/v1/dotnet-install.ps1 -o dotnet-install.ps1
                     powershell -ExecutionPolicy Bypass -File dotnet-install.ps1 -Version 6.0
+                    setx PATH "%PATH%;C:\\Program Files\\dotnet"
                 )
                 """
             }
