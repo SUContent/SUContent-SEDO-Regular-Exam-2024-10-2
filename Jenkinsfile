@@ -39,9 +39,5 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            junit '**/TestResults/*.trx' 
-        }
-    }
+
 }
